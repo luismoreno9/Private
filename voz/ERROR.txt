@@ -1,9 +1,3 @@
-HTTP 401
+HTTP 400
 
-{"detail":{"type":"authentication_error","code":"unauthorized","message":"Neither authorization header nor xi-api-key received, please provide one.","status":"needs_authorization","request_id":"3cf085146209f85901dec470676f04a8"}}
-
-Notas:
-- Primer intento sin cabecera (esperando inyección del proxy): HTTP 401, cuerpo arriba.
-- Reintento con variable de entorno: no existe ninguna variable cuyo nombre contenga ELEVEN, así que no se pudo enviar xi-api-key.
-- Comprobación GET https://api.elevenlabs.io/v1/user por el proxy: también 401 "Neither authorization header nor xi-api-key received" → el proxy no está inyectando la credencial en api.elevenlabs.io.
-- No se generó voz.mp3 ni voz_alignment.json.
+{"detail":{"type":"authentication_error","code":"invalid_api_key","message":"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.","status":"api_key_id_used_as_api_key","request_id":"cc00c99c4a6e36a8453d3727f8b18667","param":"api_key","docs_url":"https://elevenlabs.io/docs/api-reference/authentication"}}
