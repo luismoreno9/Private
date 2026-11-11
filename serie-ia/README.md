@@ -11,6 +11,7 @@ Serie de comedia por capítulos, generada con IA (Seedance 2.5 en Higgsfield), p
 3. [03-pipeline.md](03-pipeline.md): cómo se produce un capítulo, del guion al vídeo publicado, sin que los personajes cambien de cara.
 4. [04-interaccion.md](04-interaccion.md): cómo conseguir comentarios, ritmo de publicación y métricas.
 5. [plantillas/](plantillas/): ficha de personaje, guion y lista de planos.
+6. [proyecto-claude/](proyecto-claude/): instrucciones y archivo de conocimiento para el Proyecto de claude.ai.
 
 ## Reglas del proyecto
 
