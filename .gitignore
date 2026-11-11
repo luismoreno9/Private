@@ -1,0 +1,11 @@
+# Los vídeos y el audio van a Google Drive, no al repo
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.wav
+*.mp3
+*.m4a
+*.prproj
+*.drp
+.DS_Store
